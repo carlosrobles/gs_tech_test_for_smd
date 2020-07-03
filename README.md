@@ -25,6 +25,8 @@
 
 ## System diagram
 ![GitHub Logo](/doc/Partner%20Invoice-Page-1.png)
+#### Why a queue system?
+* In future there is high possibility that we need to check available to promise items (ATP) with store's inventory. so with this architecture we can communicate with 3rd party system requests without delaying the ordering process.
 
 ## Pseudo code
 #### Register partner in magento
