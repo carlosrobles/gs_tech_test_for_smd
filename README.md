@@ -15,9 +15,24 @@
 ## System diagram
 ![GitHub Logo](/doc/Partner%20Invoice.png)
 
-## Flow charts
+## Pseudo code
 #### Identify partner invoice item function
-![GitHub Logo](/doc/invoice%20partner%20function.png)
+```
+foreach(order.items as i => item) {
+    if(i%2) {
+        mark the item for main warehouse
+    } else {
+        mark the item for partner
+    }
+}
+```
+
+#### POST endpoint
+```
+generateInvoice(items);
+generateShipment(items);
+ack();
+```
 
 ## Decisions
 `TODO`
