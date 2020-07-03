@@ -18,12 +18,17 @@
 ## Pseudo code
 #### Identify partner invoice item function
 ```
-foreach(order.items as i => item) {
-    if(i%2) {
-        mark the item for main warehouse
-    } else {
-        mark the item for partner
+if(order.partner != null) {
+    foreach(order.items as i => item) {
+        if(i%2) {
+            mark the item for main warehouse
+        } else {
+            mark the item for partner
+        }
     }
+} else {
+    // organic traffic
+    mark all items for main warehouse
 }
 ```
 
@@ -34,11 +39,10 @@ generateShipment(items);
 ack();
 ```
 
-## Decisions
-`TODO`
-
-## Assumptions
-`TODO`
+## Decisions/Assumptions
+* if the item index is odd, it goes to partner
+* Main warehouse(MWH) and partner have access to orders.
+* If the traffic is organic, then all items goes to MWH
 
 ## List of tasks
 `TODO`
