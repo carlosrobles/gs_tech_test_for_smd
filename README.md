@@ -27,7 +27,7 @@ if(order.partner != null) {
         }
     }
 } else {
-    // organic traffic
+    // cookie is invalid or not set
     mark all items for main warehouse
 }
 ```
@@ -42,7 +42,7 @@ ack();
 ## Decisions/Assumptions
 * if the item index is odd, it goes to partner
 * Main warehouse(MWH) and partner have access to orders.
-* If the traffic is organic, then all items goes to MWH
+* If partner cookie is invalid or not set, then all items goes to MWH
 
 ## List of tasks
 `TODO`
