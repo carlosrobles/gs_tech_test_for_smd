@@ -13,7 +13,7 @@
     * estimation - 1hrs
 
 ## System diagram
-`TODO`
+![GitHub Logo](/doc/Partner%20Invoice.png)
 
 ## Decisions
 `TODO`
