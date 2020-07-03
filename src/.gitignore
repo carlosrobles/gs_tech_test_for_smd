@@ -7,3 +7,4 @@ media/*
 media/**
 var/*
 !var/.htaccess
+!var/sample_products.csv
