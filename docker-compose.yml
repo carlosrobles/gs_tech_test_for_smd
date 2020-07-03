@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  magento-mam:
+    container_name: magento-web-mam
+    build:
+      context: web-base
+    image: magento-web-mam
+    volumes:
+      - ./src:/var/www/html/
+    expose:
+      - 80
+    ports:
+      - 80:80
+    networks:
+      - web
+      - internal
+  mysql-mam:
+    container_name: magento-db-mam
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=""
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=magento
+      - MYSQL_USER=magento
+      - MYSQL_PASSWORD=password
+    volumes:
+        - ./storage/dumps:/docker-entrypoint-initdb.d
+        - ./storage/db:/var/lib/mysql:rw
+    networks:
+        - internal
+networks:
+  web:
+    external:
+      name: web
+  internal:
+    driver: bridge

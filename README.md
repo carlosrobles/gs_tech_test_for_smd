@@ -1,7 +1,7 @@
 ## Project description
 
 ## List of tasks before start the project
-* Setup magento 1.9 with mysql in cloud (GCP)
+* Setup magento 1.9 with mysql
     * estimation - 3 hrs
 * Refresh 4 years old magento 1.9 memories.
     * estimation - 4 hrs
