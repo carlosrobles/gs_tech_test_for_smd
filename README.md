@@ -54,7 +54,26 @@ ack();
 * If partner cookie is invalid or not set, then all items goes to MWH
 
 ## List of tasks
-`TODO`
+1. Capture partner in magento
+    * create a partner module
+    * create partner schema
+    * feed some partner data
+    * create partner cookie
+    * register partner cookie value with order
+2. Publish new order event to AWS SQS
+    * install AWS PHP SDK
+    * create new order event observer
+    * publish new order event to new-order-queue
+3. Invoice partner
+    * create a function to do invoice partner
+    * bundle the items based the pseudo code given above
+    * publish the message to item-bundle queue
+4. Push item bundle to magento endpoint
+5. Create invoice in magento based on item bundle message
+6. Create shipment in magento based on item bundle message
+7. Host magento on AWS VM
+8. Import sample products
+9. View the products in home page
 
 ## How to run this project in your localhost
 `TODO`
