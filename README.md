@@ -16,6 +16,15 @@
 ![GitHub Logo](/doc/Partner%20Invoice-Page-1.png)
 
 ## Pseudo code
+#### Register partner in magento
+```
+if(cookie.partner != null && cookie.partner.isValid) {
+    order.partner = cookie.partner
+} else {
+    order.partner = null;
+}
+```
+
 #### Identify partner invoice item function
 ```
 if(order.partner != null) {
