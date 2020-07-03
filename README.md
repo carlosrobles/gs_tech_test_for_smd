@@ -75,8 +75,5 @@ ack();
 8. Import sample products
 9. View the products in home page
 
-## How to run this project in your localhost
-`TODO`
-
-## Good reads
-`TODO`
+## TODO
+* write what can be done more to improve.
