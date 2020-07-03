@@ -1,0 +1,9 @@
+/app/etc/local.xml
+downloader/.cache/*
+downloader/cache.cfg
+downloader/connect.cfg
+maintenance.flag
+media/*
+media/**
+var/*
+!var/.htaccess
