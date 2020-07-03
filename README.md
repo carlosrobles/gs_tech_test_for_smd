@@ -15,6 +15,10 @@
 ## System diagram
 ![GitHub Logo](/doc/Partner%20Invoice.png)
 
+## Flow charts
+#### Identify partner invoice item function
+![GitHub Logo](/doc/invoice%20partner%20function.png)
+
 ## Decisions
 `TODO`
 
