@@ -13,7 +13,7 @@
     * estimation - 1hrs
 
 ## System diagram
-![GitHub Logo](/doc/Partner%20Invoice.png)
+![GitHub Logo](/doc/Partner%20Invoice-Page-1.png)
 
 ## Pseudo code
 #### Identify partner invoice item function
