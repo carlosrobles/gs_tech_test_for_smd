@@ -14,14 +14,17 @@
     * actual - 2 hrs
 * Spike on AWS SQS
     * estimation - 2 hrs
+    * actual - 2 hrs
 * Spike on AWS lambda function
     * estimation - 3 hrs
+    * actual - 5 hrs
 * Spike on AWS VM
     * estimation - 2 hrs
 * Spike on AWS PHP SDK
     * estimation - 1 hrs
 * List all the task and estimate time with considering estimations can go wrong.
     * estimation - 1hrs
+    * actual - 1 hrs
 
 ## System diagram
 ![GitHub Logo](/doc/Partner%20Invoice-Page-1.png)
