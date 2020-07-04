@@ -1,18 +1,23 @@
 {
   "name": "functions",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple typescript node project for AWS Lambda.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
   },
-  "description" : "A simple typescript node project for AWS Lambda.",
-  "keywords": ["node", "typescript", "lambda"],
+  "keywords": [
+    "node",
+    "typescript",
+    "lambda"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.0.14",
     "typescript": "^3.9.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aws-sdk": "^2.709.0"
+  }
 }
