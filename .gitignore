@@ -1,2 +1,7 @@
 .idea
 storage
+terraform_user_credentials.csv
+infrastructure/terraform.tfvars
+infrastructure/.terraform
+infrastructure/terraform.tfstate
+infrastructure/terraform.tfstate.backup

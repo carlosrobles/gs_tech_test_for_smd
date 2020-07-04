@@ -14,17 +14,22 @@
     * actual - 2 hrs
 * Spike on AWS SQS
     * estimation - 2 hrs
+    * actual - 2 hrs
 * Spike on AWS lambda function
     * estimation - 3 hrs
+    * actual - 5 hrs
 * Spike on AWS VM
     * estimation - 2 hrs
 * Spike on AWS PHP SDK
     * estimation - 1 hrs
 * List all the task and estimate time with considering estimations can go wrong.
     * estimation - 1hrs
+    * actual - 1 hrs
 
 ## System diagram
 ![GitHub Logo](/doc/Partner%20Invoice-Page-1.png)
+#### Why a queue system?
+* In future there is high possibility that we need to check available to promise items (ATP) with store's inventory. so with this architecture we can communicate with 3rd party system requests without delaying the ordering process.
 
 ## Pseudo code
 #### Register partner in magento
@@ -87,4 +92,5 @@ ack();
 9. View the products in home page
 
 ## TODO
-* write what can be done more to improve.
+* Manage IAM roles via terraform
+* Write unit test for functions and magento custom modules
