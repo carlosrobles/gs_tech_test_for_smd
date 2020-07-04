@@ -18,10 +18,9 @@
 * Spike on AWS lambda function
     * estimation - 3 hrs
     * actual - 5 hrs
-* Spike on AWS VM
+* Spike on AWS EC2
     * estimation - 2 hrs
-* Spike on AWS PHP SDK
-    * estimation - 1 hrs
+    * actual - 1hr
 * List all the task and estimate time with considering estimations can go wrong.
     * estimation - 1hrs
     * actual - 1 hrs
@@ -94,3 +93,4 @@ ack();
 ## TODO
 * Manage IAM roles via terraform
 * Write unit test for functions and magento custom modules
+* create EC2 instance via terraform
