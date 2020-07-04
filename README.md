@@ -89,4 +89,5 @@ ack();
 9. View the products in home page
 
 ## TODO
-* write what can be done more to improve.
+* Manage IAM roles via terraform
+* Write unit test for functions and magento custom modules
