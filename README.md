@@ -10,6 +10,7 @@
     * actual - 4 hrs
 * Refresh 4 years old magento 1.9 memories.
     * estimation - 4 hrs
+    * estimation - 2 hrs
 * Understand the project requirements.
     * estimation - 1 hrs
     * actual - 1 hrs
@@ -90,7 +91,9 @@ ack();
 4. Push item bundle to magento endpoint
 5. Create invoice in magento based on item bundle message
 6. Create shipment in magento based on item bundle message
-7. Host magento on AWS VM
+7. Host magento on AWS EC2
+    * Estimated - 2hrs
+    * actual - 0hrs (Completed with the spike task)
 8. Import sample products
 9. View the products in home page
 
