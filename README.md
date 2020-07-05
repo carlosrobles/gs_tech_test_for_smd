@@ -96,6 +96,9 @@ ack();
     * actual - 0hrs (Completed with the spike task)
 8. Import sample products
 9. View the products in home page
+10. Create infrastructure 
+    * Estimated - 8hrs
+    * actual - 0hrs (Completed with the spike task)
 
 ## TODO
 * Manage IAM roles via terraform
