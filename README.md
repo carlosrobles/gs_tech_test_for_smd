@@ -1,8 +1,8 @@
 ## Project description
-Frontend: http://ec2-13-127-126-95.ap-south-1.compute.amazonaws.com/index.php/
-Admin: http://ec2-13-127-126-95.ap-south-1.compute.amazonaws.com/index.php/admin_xbhyts
-admin user: mam
-admin pw: admin1234
+* Frontend: http://ec2-13-127-126-95.ap-south-1.compute.amazonaws.com/index.php/
+* Admin: http://ec2-13-127-126-95.ap-south-1.compute.amazonaws.com/index.php/admin_xbhyts
+    * admin user: mam
+    * admin pw: admin1234
 
 ## List of tasks before start the project
 * Setup magento 1.9 with mysql
