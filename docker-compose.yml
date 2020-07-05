@@ -8,6 +8,8 @@ services:
     image: magento-web-mam
     volumes:
       - ./src:/var/www/html/
+    environment:
+      - SERVER_NAME=gs.tech.test
     expose:
       - 80
     ports:

@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     iproute2 \
     libpng-dev \
     libxml2-dev \
-    libmcrypt-dev
+    libmcrypt-dev \
+    iproute2
 
 # install required extensions
 RUN docker-php-ext-install \
@@ -19,9 +20,12 @@ RUN docker-php-ext-install \
     pdo \
     pdo_mysql
 
-# Enable and configure xdebug
-RUN pecl install xdebug
-RUN docker-php-ext-enable xdebug
+# install xdebug
+RUN pecl install xdebug-2.6.1 && docker-php-ext-enable xdebug
+RUN echo 'zend_extension="/usr/local/lib/php/extensions/no-debug-non-zts-20151012/xdebug.so"' >> /usr/local/etc/php/php.ini
+RUN echo 'xdebug.remote_port=9001' >> /usr/local/etc/php/php.ini
+RUN echo 'xdebug.remote_enable=1' >> /usr/local/etc/php/php.ini
+RUN echo 'xdebug.remote_connect_back=1' >> /usr/local/etc/php/php.ini
 
 # Enable and configure mcript
 RUN pecl install mcrypt-1.0.1
