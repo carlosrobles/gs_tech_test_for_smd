@@ -68,6 +68,15 @@ generateShipment(items);
 ack();
 ```
 
+## Models
+1. Partner model
+```
+id: int
+display_name: string
+unique_code: string
+status: bool
+```
+
 ## Decisions/Assumptions
 * if the item index is odd, it goes to partner
 * Main warehouse(MWH) and partner have access to orders.

@@ -10,6 +10,7 @@ services:
       - ./src:/var/www/html/
     environment:
       - SERVER_NAME=gs.tech.test
+      - MAGE_IS_DEVELOPER_MODE=true
     expose:
       - 80
     ports:
