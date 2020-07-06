@@ -6,14 +6,15 @@ class GoldenScent_Partner_Model_Observer
 
     public function capturePartner(Varien_Event_Observer $observer)
     {
+        $partnerModel = Mage::getModel('goldenscent_partner/partner');
         $frontController = $observer->getEvent()->getFront();
-        $partner = $frontController->getRequest()
+        $unique_code = $frontController->getRequest()
             ->getParam('partner', false);
 
-        if ($partner) {
+        if ($unique_code && $partnerModel->getPartnerByUniqueCode($unique_code)) {
             Mage::getModel('core/cookie')->set(
                 self::COOKIE_KEY_SOURCE,
-                $partner,
+                $unique_code,
                 86400
             );
         }
