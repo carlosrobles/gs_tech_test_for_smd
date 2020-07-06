@@ -2,7 +2,7 @@
 <config>
     <modules>
         <GoldenScent_Partner>
-            <version>0.0.1</version>
+            <version>0.0.2</version>
         </GoldenScent_Partner>
     </modules>
     <global>
@@ -27,17 +27,30 @@
                     <class>GoldenScent_Partner_Model_Resource_Setup</class>
                 </setup>
             </gs_partner_setup>
+            <gs_partner_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </gs_partner_write>
         </resources>
         <events>
             <controller_front_init_before>
                 <observers>
                     <goldenscent_partner>
-                        <class>goldenscent_partner/observer</class>
+                        <class>goldenscent_partner/partnerObserver</class>
                         <method>capturePartner</method>
                         <type>singleton</type>
                     </goldenscent_partner>
                 </observers>
             </controller_front_init_before>
+            <sales_order_place_after>
+                <observers>
+                    <sales_order_place_after>
+                        <class>goldenscent_partner/salesOrderPlaceAfterObserver</class>
+                        <method>addPartnerOnOrder</method>
+                    </sales_order_place_after>
+                </observers>
+            </sales_order_place_after>
         </events>
     </global>
 </config>

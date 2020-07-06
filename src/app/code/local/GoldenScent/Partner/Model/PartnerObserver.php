@@ -1,6 +1,6 @@
 <?php
 
-class GoldenScent_Partner_Model_Observer
+class GoldenScent_Partner_Model_PartnerObserver
 {
     const COOKIE_KEY_SOURCE = 'gs_partner';
 
@@ -12,7 +12,7 @@ class GoldenScent_Partner_Model_Observer
             ->getParam('partner', false);
 
         if ($unique_code && $partnerModel->getPartnerByUniqueCode($unique_code)) {
-            Mage::getModel('core/cookie')->set(
+            Mage::getSingleton('core/cookie')->set(
                 self::COOKIE_KEY_SOURCE,
                 $unique_code,
                 86400
