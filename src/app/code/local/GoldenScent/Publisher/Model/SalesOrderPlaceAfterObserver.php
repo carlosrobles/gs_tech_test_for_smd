@@ -16,11 +16,11 @@ class GoldenScent_Publisher_Model_SalesOrderPlaceAfterObserver
         /** @var Mage_Sales_Model_Order_Item $item */
         foreach ($order->getAllItems() as $item) {
             $items[$item->getId()] = [
-                'id' => $item->getId()
+                'item_id' => $item->getId()
             ];
         }
         $message = [
-            'id' => $order->getId(),
+            'order_id' => $order->getId(),
             'partner' => $order->getData('partner'),
             'items' => $items,
         ];

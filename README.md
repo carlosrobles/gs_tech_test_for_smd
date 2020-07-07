@@ -125,6 +125,14 @@ status: bool
     * Estimated - 8hrs
     * actual - 0hrs (Completed with the spike task)
 
+## Commands used
+* Infrastructure
+    * terraform init
+    * terraform plan
+    * terraform apply
+* Functions
+    * npm run build
+
 ## TODO
 * Manage IAM roles via terraform
 * Write unit test for functions and magento custom modules
