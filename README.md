@@ -132,3 +132,4 @@ status: bool
 * create an apigateway for magento. so magento can communicate with the lambda functions to publish the messages via REST.
 * remove aws credentials from git
 * add env variables in the deployment process
+* create an admin grid to manage partner
