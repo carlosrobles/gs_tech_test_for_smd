@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <GoldenScent_Publisher>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <GoldenScent_Partner />
+            </depends>
+        </GoldenScent_Publisher>
+    </modules>
+</config>

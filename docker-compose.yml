@@ -8,6 +8,12 @@ services:
     image: magento-web-mam
     volumes:
       - ./src:/var/www/html/
+    environment:
+      - SERVER_NAME=gs.tech.test
+      - MAGE_IS_DEVELOPER_MODE=true # myst be false in prod
+      - AWS_ACCESS_KEY_ID=AKIAXSVYJD7WDUCYJ6WZ #should not be in git for security reasons
+      - AWS_SECRET_ACCESS_KEY=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 #should not be in git for security reasons
+      - NEW_ORDER_STANDARD=https://sqs.ap-south-1.amazonaws.com/521151258604/new-order-standard
     expose:
       - 80
     ports:
