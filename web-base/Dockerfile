@@ -21,6 +21,7 @@ RUN docker-php-ext-install \
     pdo_mysql
 
 # install xdebug
+# should not install in prod
 RUN pecl install xdebug-2.6.1 && docker-php-ext-enable xdebug
 RUN echo 'zend_extension="/usr/local/lib/php/extensions/no-debug-non-zts-20151012/xdebug.so"' >> /usr/local/etc/php/php.ini
 RUN echo 'xdebug.remote_port=9001' >> /usr/local/etc/php/php.ini

@@ -45,10 +45,10 @@
             </controller_front_init_before>
             <sales_order_place_after>
                 <observers>
-                    <sales_order_place_after>
+                    <gs_partner_sales_order_place_after>
                         <class>goldenscent_partner/salesOrderPlaceAfterObserver</class>
                         <method>addPartnerOnOrder</method>
-                    </sales_order_place_after>
+                    </gs_partner_sales_order_place_after>
                 </observers>
             </sales_order_place_after>
         </events>
