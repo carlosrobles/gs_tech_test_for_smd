@@ -1,9 +1,3 @@
-## Project description
-* Frontend: http://ec2-13-127-126-95.ap-south-1.compute.amazonaws.com/index.php/
-* Admin: http://ec2-13-127-126-95.ap-south-1.compute.amazonaws.com/index.php/admin_xbhyts
-    * admin user: mam
-    * admin pw: admin1234
-
 ## List of tasks before start the project
 * Setup magento 1.9 with mysql
     * estimation - 3 hrs
@@ -31,7 +25,8 @@
     * actual - 1 hrs
 
 ## System diagram
-![GitHub Logo](/doc/Partner%20Invoice-Page-1.png)
+* This is the initial plan for this project, but since the lambda and sqs concepts are new, it took me lots of time to debug and fix issues, therefor i replaced the queue system with magento event observer.
+* ![Architecture](/doc/Partner%20Invoice-Page-1.png)
 #### Why a queue system?
 * In future there is high possibility that we need to check available to promise items (ATP) with store's inventory. so with this architecture we can communicate with 3rd party system requests without delaying the ordering process.
 
@@ -125,18 +120,21 @@ status: bool
 4. Push item bundle to magento endpoint
     * Status - Hold
 5. Create invoice in magento based on item bundle message
+    * Haven't done yet
 6. Create shipment in magento based on item bundle message
+    * Haven't done yet
 7. Host magento on AWS EC2
     * Estimated - 2hrs
     * actual - 0hrs (Completed with the spike task)
-8. Import sample products
-9. View the products in home page
-10. Create infrastructure 
+    * Instance is unreachable after few minutes. 
+8. Create infrastructure 
     * Estimated - 8hrs
     * actual - 0hrs (Completed with the spike task)
-11. Create partner column in order grid
+9. Create partner column in order grid
     * Estimated - 1hrs
     * actual - 1hrs
+    * ![Order Grid](/doc/order-grid.png)
+    * ![Order Items](/doc/order-items.png)
 
 ## Commands used
 * Infrastructure

@@ -60,14 +60,6 @@
                     </gs_partner_sales_order_place_after>
                 </observers>
             </sales_order_place_after>
-            <sales_order_save_after>
-                <observers>
-                    <gs_partner_sales_order_save_after>
-                        <class>goldenscent_partner/salesOrderSaveAfterObserver</class>
-                        <method>partnerInvoice</method>
-                    </gs_partner_sales_order_save_after>
-                </observers>
-            </sales_order_save_after>
         </events>
     </global>
 </config>
