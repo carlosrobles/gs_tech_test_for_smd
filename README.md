@@ -4,6 +4,7 @@
     * http://127.0.0.1/?partner=moe
     * http://127.0.0.1/?partner=dm
     * http://127.0.0.1/?partner=bm
+* Find import sample product file in `src/var`
 
 ## List of tasks before start the project
 * Setup magento 1.9 with mysql
