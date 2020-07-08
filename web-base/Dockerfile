@@ -36,3 +36,7 @@ RUN userdel www-data
 RUN groupadd -g 1000 www-data
 RUN useradd -r -m -u 1000 www-data -g www-data
 RUN chown -Rf www-data:www-data /var/www/html/
+
+###### Install Composer
+RUN curl -s http://getcomposer.org/installer | php \
+    && mv composer.phar /usr/local/bin/composer
