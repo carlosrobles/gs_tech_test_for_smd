@@ -16,13 +16,13 @@ class GoldenScent_Partner_Model_SalesOrderPlaceAfterObserver
                 if ($key % 2 || !$order->getPartner()) {
                     $connection->query(
                         "UPDATE sales_flat_order_item 
-                        SET to_partner = false 
+                        SET partner = 'mwh' 
                         where item_id = '" . $item->getId() . "'"
                     );
                 } else {
                     $connection->query(
                         "UPDATE sales_flat_order_item 
-                            SET to_partner = true 
+                            SET partner = '".$partner."' 
                             where item_id = '" . $item->getId() . "'"
                     );
                 }

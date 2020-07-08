@@ -5,6 +5,15 @@
             <version>0.0.3</version>
         </GoldenScent_Partner>
     </modules>
+    <stores>
+        <admin>
+            <design>
+                <theme>
+                    <template>goldenscent</template>
+                </theme>
+            </design>
+        </admin>
+    </stores>
     <global>
         <models>
             <goldenscent_partner>
@@ -51,6 +60,14 @@
                     </gs_partner_sales_order_place_after>
                 </observers>
             </sales_order_place_after>
+            <sales_order_save_after>
+                <observers>
+                    <gs_partner_sales_order_save_after>
+                        <class>goldenscent_partner/salesOrderSaveAfterObserver</class>
+                        <method>partnerInvoice</method>
+                    </gs_partner_sales_order_save_after>
+                </observers>
+            </sales_order_save_after>
         </events>
     </global>
 </config>
