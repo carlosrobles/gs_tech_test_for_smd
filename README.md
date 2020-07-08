@@ -128,9 +128,9 @@ status: bool
 4. Push item bundle to magento endpoint
     * Status - Hold
 5. Create invoice in magento based on item bundle message
-    * Haven't done yet
+    * <b>Haven't done yet</b>
 6. Create shipment in magento based on item bundle message
-    * Haven't done yet
+    * <b>Haven't done yet</b>
 7. Host magento on AWS EC2
     * Estimated - 2hrs
     * actual - 0hrs (Completed with the spike task)
