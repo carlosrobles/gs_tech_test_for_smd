@@ -151,6 +151,23 @@ status: bool
     * terraform apply
 * Functions
     * npm run build
+* docker
+    * docker-compose up -d
+    * docker-compose down
+    
+## Project setup steps
+* Setup magento 
+    * Clone the project 
+    * `cd gs_tech_test_for_smd`
+    * Make sure port 80 is available 
+    * run `docker-compose up -d`
+    * create media directory in src
+    * complete the magento installation process
+        * mysql host: magento-db-mam
+        * mysql username: magento
+        * mysql password: password
+    * import products using sample file
+    * access on http://localhost
 
 ## TODO
 * Manage IAM roles via terraform
