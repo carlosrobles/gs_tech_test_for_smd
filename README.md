@@ -124,6 +124,9 @@ status: bool
 10. Create infrastructure 
     * Estimated - 8hrs
     * actual - 0hrs (Completed with the spike task)
+11. Create partner column in order grid
+    * Estimated - 1hrs
+    * actual - 1hrs
 
 ## Commands used
 * Infrastructure
