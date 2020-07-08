@@ -62,7 +62,7 @@ if (file_exists($maintenanceFile)) {
     exit;
 }
 
-require MAGENTO_ROOT . '/app/bootstrap.php';
+//require MAGENTO_ROOT . '/app/bootstrap.php';
 require_once $mageFilename;
 
 #Varien_Profiler::enable();

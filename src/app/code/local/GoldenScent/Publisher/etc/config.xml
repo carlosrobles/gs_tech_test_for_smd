@@ -11,15 +11,15 @@
                 <class>GoldenScent_Publisher_Model</class>
             </goldenscent_publisher>
         </models>
-        <events>
-            <sales_order_place_after>
-                <observers>
-                    <gs_publisher_sales_order_place_after>
-                        <class>goldenscent_publisher/salesOrderPlaceAfterObserver</class>
-                        <method>publishNewOrder</method>
-                    </gs_publisher_sales_order_place_after>
-                </observers>
-            </sales_order_place_after>
-        </events>
+<!--        <events>-->
+<!--            <sales_order_place_after>-->
+<!--                <observers>-->
+<!--                    <gs_publisher_sales_order_place_after>-->
+<!--                        <class>goldenscent_publisher/salesOrderPlaceAfterObserver</class>-->
+<!--                        <method>publishNewOrder</method>-->
+<!--                    </gs_publisher_sales_order_place_after>-->
+<!--                </observers>-->
+<!--            </sales_order_place_after>-->
+<!--        </events>-->
     </global>
 </config>

@@ -2,7 +2,7 @@
 <config>
     <modules>
         <GoldenScent_Publisher>
-            <active>true</active>
+            <active>false</active>
             <codePool>local</codePool>
             <depends>
                 <GoldenScent_Partner />
