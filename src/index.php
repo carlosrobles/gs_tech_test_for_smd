@@ -34,7 +34,7 @@ Whoops, it looks like you have an invalid PHP version.</h3></div><p>Magento supp
     exit;
 }
 
-require 'vendor/autoload.php';
+//require 'vendor/autoload.php';
 /**
  * Compilation includes configuration file
  */

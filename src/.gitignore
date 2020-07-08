@@ -8,5 +8,4 @@ media/**
 var/*
 !var/.htaccess
 !var/sample_products.csv
-vendor
 .aws
