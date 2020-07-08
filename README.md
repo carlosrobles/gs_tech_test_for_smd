@@ -1,3 +1,10 @@
+## Project description
+* unable to host since the ec2 was not accessible after few min
+* Considering only allowed partner in the database for invoicing.
+    * http://127.0.0.1/?partner=moe
+    * http://127.0.0.1/?partner=dm
+    * http://127.0.0.1/?partner=bm
+
 ## List of tasks before start the project
 * Setup magento 1.9 with mysql
     * estimation - 3 hrs

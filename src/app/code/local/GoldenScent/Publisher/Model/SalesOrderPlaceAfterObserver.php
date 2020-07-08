@@ -4,6 +4,9 @@ use Aws\Sqs\SqsClient;
 
 class GoldenScent_Publisher_Model_SalesOrderPlaceAfterObserver
 {
+    /*
+     * process new orders and publish to sqs
+     */
     public function publishNewOrder(Varien_Event_Observer $observer)
     {
         /** @var GoldenScent_Publisher_Model_Publisher $publisher */

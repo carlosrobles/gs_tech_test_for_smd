@@ -7,6 +7,9 @@ class GoldenScent_Partner_Model_Partner extends Mage_Core_Model_Abstract
         $this->_init('goldenscent_partner/partner');
     }
 
+    /*
+     * fetch partner by partner's unique code
+     */
     public function getPartnerByUniqueCode($unique_code)
     {
         return Mage::getSingleton('core/resource')

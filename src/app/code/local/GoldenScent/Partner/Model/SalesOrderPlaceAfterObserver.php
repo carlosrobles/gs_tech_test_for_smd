@@ -2,6 +2,9 @@
 
 class GoldenScent_Partner_Model_SalesOrderPlaceAfterObserver
 {
+    /*
+     * Set partner for on order level and assign items for partner and mwh (main warehouse)
+     */
     public function updateOrderWithPartner(Varien_Event_Observer $observer)
     {
         try {

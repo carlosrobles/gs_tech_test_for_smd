@@ -19,6 +19,9 @@ class GoldenScent_Publisher_Model_Publisher
         ]);
     }
 
+    /*
+     * Publish mesage to sqs
+     */
     public function publish($url, $message)
     {
         try {
