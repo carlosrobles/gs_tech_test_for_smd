@@ -1,4 +1,5 @@
 <?php
+
 class GoldenScent_Partner_Model_Partner extends Mage_Core_Model_Abstract
 {
     protected function _construct()

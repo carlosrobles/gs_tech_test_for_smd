@@ -2,9 +2,33 @@
 
 class GoldenScent_Partner_Model_SalesOrderPlaceAfterObserver
 {
-    public function addPartnerOnOrder(Varien_Event_Observer $observer)
+    public function updateOrderWithPartner(Varien_Event_Observer $observer)
     {
-        $partner = Mage::getSingleton('core/cookie')->get('gs_partner');
-        $observer->getOrder()->setPartner($partner);
+        try {
+            /** @var Mage_Sales_Model_Order $order */
+            $order = $observer->getOrder();
+            $partner = Mage::getSingleton('core/cookie')->get('gs_partner');
+            $order->setPartner($partner);
+            /** @var Varien_Db_Adapter_Interface $connection */
+            $connection = Mage::getSingleton('core/resource')->getConnection('core_write');
+            foreach ($order->getAllItems() as $key => $item) {
+                /** @var Mage_Sales_Model_Order_Item $item */
+                if ($key % 2 || !$order->getPartner()) {
+                    $connection->query(
+                        "UPDATE sales_flat_order_item 
+                        SET to_partner = false 
+                        where item_id = '" . $item->getId() . "'"
+                    );
+                } else {
+                    $connection->query(
+                        "UPDATE sales_flat_order_item 
+                            SET to_partner = true 
+                            where item_id = '" . $item->getId() . "'"
+                    );
+                }
+            }
+        } catch (Exception $e) {
+            //TODO: log the error
+        }
     }
 }

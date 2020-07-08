@@ -2,7 +2,7 @@
 <config>
     <modules>
         <GoldenScent_Partner>
-            <version>0.0.2</version>
+            <version>0.0.3</version>
         </GoldenScent_Partner>
     </modules>
     <global>
@@ -47,7 +47,7 @@
                 <observers>
                     <gs_partner_sales_order_place_after>
                         <class>goldenscent_partner/salesOrderPlaceAfterObserver</class>
-                        <method>addPartnerOnOrder</method>
+                        <method>updateOrderWithPartner</method>
                     </gs_partner_sales_order_place_after>
                 </observers>
             </sales_order_place_after>

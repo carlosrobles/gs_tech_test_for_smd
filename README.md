@@ -111,9 +111,19 @@ status: bool
         * actual - 1.5hrs
 3. Invoice partner
     * create a function to do invoice partner
+        * Estimated - 1hrs
+        * actual - 0 hrs(completed when doing the spike)
     * bundle the items based the pseudo code given above
+        * Estimated - 2hrs
+        * actual - 4hrs (debugging was the most time-consuming work)
     * publish the message to item-bundle queue
+        * Estimated - 1hrs
+        * actual - 0.5hrs
+        * Issues
+            * messages become bundle
+            * need more understanding about sqs anf lambda to continue further work     
 4. Push item bundle to magento endpoint
+    * Status - Hold
 5. Create invoice in magento based on item bundle message
 6. Create shipment in magento based on item bundle message
 7. Host magento on AWS EC2
